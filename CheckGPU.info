@@ -1,0 +1,50 @@
+
+"""
+Created on Tue Jul  7 20:05:07 2020
+
+@author: Shankar J
+
+"""
+#Check GPU Driver and CUDA driver version
+nvidia-smi.exe or nvcuda.dll in system32 folder
+
+#Check cuda toolkit version
+
+nvcc --version
+
+#check cudadnn version
+
+credit : https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation
+
+C:\>where cudnn*
+C:\Program Files\cuDNN6\cuda\bin\cudnn64_6.dll  
+
+type "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include\cudnn.h" | 
+findstr "CUDNN_MAJOR CUDNN_MINOR CUDNN_PATCHLEVEL"
+
+#Install cuda and cudadnn on windows
+https://medium.com/analytics-vidhya/cuda-toolkit-on-windows-10-20244437e036
+
+#Tensorflow gpu support setup
+https://www.tensorflow.org/install/gpu
+
+#NVIDIA instructions for CUDA and CUDADnn
+https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/
+https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
+
+#Tensorflow GPU Config
+https://www.tensorflow.org/api_docs/python/tf/config/
+
+#Tensorflow GPU Use
+https://www.tensorflow.org/guide/gpu
+
+#code to check if tf is using gpu
+
+import tensorflow as tf
+#Check physical device
+tf.config.list_physical_devices() #CPU, #GPU and #TPU
+tf.config.list_physical_devices('GPU') #GPU only
+#Check which physical device is visible to runtime
+tf.config.get_visible_devices() #all devices
+#Test if tf can show the GPU that will be used
+tf.test.gpu_device_name()
