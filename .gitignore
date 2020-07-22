@@ -451,3 +451,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+models/Excercise6_41min_77ep_1gpu_adam.h5
+models/Excercise5_26min_40ep_sgd+nmom.h5
+models/Excercise6_33min_79ep_2gpu_adam.h5
