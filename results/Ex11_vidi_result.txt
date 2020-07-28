@@ -1,0 +1,18 @@
+Train metrics
+
+Damage	150	150	150				
+Tape	105	105	105				
+Wrinkle	221	221	221				
+				
+
+100 acc
+
+
+
+Test metrics
+
+Damage	253	0	257	0.0	95.3	96.8	96.1
+tape	48	0	32	0.0	100.0	66.7	80.0
+wrinkle	195	0	206	0.0	92.7	98.5	95.5
+
+94.5 acc

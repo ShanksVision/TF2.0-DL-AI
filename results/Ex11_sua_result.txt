@@ -1,0 +1,30 @@
+Train metrics
+
+-,damage,wrinkle,tape,Unknown
+damage,149,1,0,0,
+wrinkle,0,219,2,0,
+tape,0,2,103,0,
+
+Class,Actual #,Correct,Missed detection,False detection,Precision,Recall,Missed detection ratio,False detection ratio
+damage,150,149,1,0,100.00,99.33,0.67,0.00,
+wrinkle,221,219,2,3,98.65,99.10,0.90,1.18,
+tape,105,103,2,2,98.10,98.10,1.90,0.54,
+Sum&Average,476,471,5,5,98.91,98.84,1.16,0.57,
+
+Acc 98.94
+
+
+Test metrics
+
+-,damage,wrinkle,tape,Unknown
+damage,239,11,13,0,
+wrinkle,3,173,8,0,
+tape,2,5,42,0,
+
+Class,Actual #,Correct,Missed detection,False detection,Precision,Recall,Missed detection ratio,False detection ratio
+damage,263,239,24,5,97.95,90.87,9.13,2.15,
+wrinkle,184,173,11,16,91.53,94.02,5.98,5.13,
+tape,49,42,7,21,66.67,85.71,14.29,4.70,
+Sum&Average,496,454,42,42,85.38,90.20,9.80,3.99,
+
+Acc 91.5
